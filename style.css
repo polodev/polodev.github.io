@@ -48,6 +48,10 @@ p.skill_title {
   font-weight: bold;
 }
 
+.experience .role {
+  margin-bottom: 10px;
+}
+
 .my_info {
   color: teal;
 }
