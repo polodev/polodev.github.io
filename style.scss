@@ -1,3 +1,6 @@
+h1, h2, h3, h4, h5, h6 {
+	color: teal;
+}
 .sidenav {
 	border-right: 1px solid beige;
 	box-sizing: border-box;
@@ -30,6 +33,29 @@ p.skill_title {
 	border-bottom: 1px solid beige;
 	p.company {
 		margin-bottom: 8px;
+		color: teal;
 		font-weight: bold;
+	}
+}
+
+.my_info {
+	color: teal;
+	a {
+		color: darken(teal, 5%);
+		transition: all .3s;
+		&:hover {
+			color: darken(teal, 15%);
+		}
+	}
+}
+.footer {
+	h2 {
+		color: white;
+		a {
+			color: #eee;
+			&:hover {
+				color: darken(teal, 5%);
+			}
+		}
 	}
 }

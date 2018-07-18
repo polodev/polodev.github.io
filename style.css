@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: teal;
+}
+
 .sidenav {
   border-right: 1px solid beige;
   -webkit-box-sizing: border-box;
@@ -35,6 +44,33 @@ p.skill_title {
 
 .experience p.company {
   margin-bottom: 8px;
+  color: teal;
   font-weight: bold;
+}
+
+.my_info {
+  color: teal;
+}
+
+.my_info a {
+  color: #006767;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.my_info a:hover {
+  color: #003434;
+}
+
+.footer h2 {
+  color: white;
+}
+
+.footer h2 a {
+  color: #eee;
+}
+
+.footer h2 a:hover {
+  color: #006767;
 }
 
