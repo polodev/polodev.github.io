@@ -1,0 +1,38 @@
+.sidenav {
+  border-right: 1px solid beige;
+}
+
+img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.description p {
+  margin-bottom: 5px;
+}
+
+p.skill_title {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.skill {
+  margin-top: 20px;
+  border-bottom: 1px solid beige;
+}
+
+.skill p {
+  margin-bottom: 10px;
+}
+
+.experience {
+  margin-bottom: 15px;
+  border-bottom: 1px solid beige;
+}
+
+.experience p.company {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
