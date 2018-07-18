@@ -54,6 +54,9 @@ p.skill_title {
 .footer {
 	h2 {
 		color: white;
+		@media screen and (max-width: 800px) {
+			font-size: 20px;
+		}
 		a {
 			color: #eee;
 			&:hover {
@@ -61,4 +64,7 @@ p.skill_title {
 			}
 		}
 	}
+}
+.list-group-item {
+	overflow: auto;
 }
