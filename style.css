@@ -1,5 +1,7 @@
 .sidenav {
   border-right: 1px solid beige;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
