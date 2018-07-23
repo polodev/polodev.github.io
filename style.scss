@@ -24,8 +24,16 @@ p.skill_title {
 	margin-top: 20px;
 	p {
 		margin-bottom: 10px;
+		@media print {
+			margin-bottom: 5px;
+		}
 	}
 	border-bottom: 1px solid beige;
+	.progress {
+		@media print {
+			display: none;
+		}
+	}
 }
 
 .experience {
