@@ -95,6 +95,14 @@
 					</div>
 					<!-- end skill -->
 					<div class='skill'>
+						<p class="skill_title">Angular js</p>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<p><small>Using it since 2017</small></p>
+					</div>
+					<!-- end skill -->
+					<div class='skill'>
 						<p class="skill_title">Jekyll</p>
 						<div class="progress">
 						  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -125,14 +133,55 @@
 			<!-- /.col-md-4 -->
 			<div class='col-md-8 content'>
 				<section class="mt-3">
-					<h2>Objectives</h2>
-					<p>Seeking a productive career in Web Development field</p>
+					<h2>Hello sir,</h2>
+		      <p>I'm Shibu Chandra Debnath. I'm a web developer. I spend practically every day experimenting with HTML, CSS, JavaScript and Php. I build website that people love and I do it well. I am curious & adaptive about new technology and integrating in my project. </p>
+					<p>Currently I am seeking a productive career in Web Development field.</p>
+		      <p>A slight clarification about me: I am actually a Marketing graduate disguised as a good web developer. </p>
+		      <p>Hope it will help, to understand about me.</p>
 				</section>
-
-
 
 				<section class="mt-3">
 					<h2>Work Experiences</h2>
+					<div class='experience'>
+						<div class='row'>
+							<div class='col-md-3'>
+								Sep 1, 2018 — Present 
+							</div>
+							<div class='col-md-9'>
+								<p class='company'><a href='https://mediusware.com/'>Mediusware Ltd</a></p>
+								<div class='description'>
+									<p class="role">PHP and Laravel Developer</p>
+									<p>Working with Php, Laravel, Vue, React, Nodejs, Angular</p>
+								</div>
+								<!-- /.description -->
+								<!-- /.company -->
+							</div>
+							<!-- /.col-md-9 -->
+							<!-- /.col-md-3 -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.experience -->
+					<div class='experience'>
+						<div class='row'>
+							<div class='col-md-3'>
+								April 2018 - Aug 2018
+							</div>
+							<div class='col-md-9'>
+								<p class='company'>Great & Smart Technology Ltd</p>
+								<div class='description'>
+									<p class="role">Technical trainer of web development with php, laravel and mysql.</p>
+									<p>As a technical trainer I teach php, mysql, laravel.</p>
+								</div>
+								<!-- /.description -->
+								<!-- /.company -->
+							</div>
+							<!-- /.col-md-9 -->
+							<!-- /.col-md-3 -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.experience -->
 					<div class='experience'>
 						<div class='row'>
 							<div class='col-md-3'>
@@ -141,7 +190,7 @@
 							<div class='col-md-9'>
 								<p class='company'>Ernst & Young</p>
 								<div class='description'>
-									<p class="role">Technical trainer of web development with php and mysql.</p>
+									<p class="role">Technical trainer of web development with php, laravel and mysql.</p>
 									<p>As a technical trainer I teach php, mysql, laravel.</p>
 								</div>
 								<!-- /.description -->
@@ -176,7 +225,7 @@
 					<div class='experience'>
 						<div class='row'>
 							<div class='col-md-3'>
-								January 2014 — June 2015
+								January 2012 — June 2015
 							</div>
 							<div class='col-md-9'>
 								<p class='company'>Self Employed</p>
@@ -193,6 +242,23 @@
 					</div>
 					<!-- /.experience -->
 				</section>
+
+				<section class='mt-e'>
+			    <h2>My skills Set</h2>
+			    <table class="table table-striped">
+			      <thead>
+			        <tr>
+			          <th>Technology</th>
+			          <th>Number of Projects</th>
+			          <th>Worked Around / Years</th>
+			          <th>Rating(out of 10)</th>
+			        </tr>
+			      </thead>
+			      <tbody id="skills">
+			      </tbody>
+			    </table>
+				</section>
+				<!-- /.mt-e -->
 
 				<section class="mt-3">
 					<h2>Qualification</h2>
@@ -271,7 +337,7 @@
 				</section>
 
 				<section class="mt-3">
-					<h2>Project in github (has documentation to run these project)</h2>
+					<h2>Some projects in Github </h2>
 					<ul class='list-group'>
 						<li class='list-group-item'>
 							<a href='https://github.com/poloey/h43_city_doctor'>https://github.com/poloey/h43_city_doctor</a>
@@ -326,13 +392,47 @@
 		<!-- /.row -->
 	</div>
 	<div class='footer bg-info text-white text-center p-4 mt-4'>
-		<h2>
-			Reference: <a href="https://www.facebook.com/rajibshovon">Rajib shovon</a>
-		</h2>
-		<h2>
-			Updated CV - <a href='https://polodev.github.io/'>https://polodev.github.io/</a>
-		</h2>
+      <p><strong>Sincerely </strong></p>
+      <p>Shibu chandra debnath(polo)</p>
+      <p>01670978989</p>
+			<h2>
+				Updated CV - <a href='https://polodev.github.io/'>https://polodev.github.io/</a>
+			</h2>
 	</div>
 	<!-- /.bg-info text-white text-center p-4 -->
+<script src='skills.js'></script>
+<script>
+(function () {
+var App = {
+  init: function () {
+    this.domCached()
+    this.render()
+  },
+  skills: skills,
+  domCached: function () {
+    this.skill = document.getElementById('skills')
+  },
+  generateTd: function (tdValue, tr) {
+    let td = document.createElement('td');
+    let text = document.createTextNode(tdValue);
+    td.appendChild(text);
+    tr.appendChild(td);
+  },
+  render: function () {
+    this.skills.forEach(skill => {
+      let tr = document.createElement('tr');
+      this.generateTd(skill.technology, tr)
+      this.generateTd(skill.projects, tr)
+      this.generateTd(skill.exeperiences, tr)
+      this.generateTd(skill.rating, tr)
+      this.skill.appendChild(tr);
+    })
+  }
+}
+App.init();
+
+}()) 
+  
+</script>
 </body>
 </html>
