@@ -65,12 +65,12 @@ var skills = [
     exeperiences: '3+',
     rating: 8, 
   },
-  {
-    technology: 'Angular',
-    projects: '2+',
-    exeperiences: '1+',
-    rating: 6, 
-  },
+  // {
+  //   technology: 'Angular',
+  //   projects: '2+',
+  //   exeperiences: '1+',
+  //   rating: 6, 
+  // },
   {
     technology: 'Jekyll',
     projects: '10+',
