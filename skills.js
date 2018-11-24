@@ -25,25 +25,25 @@ var skills = [
   },
   {
     technology: 'PHP',
-    projects: '50+',
+    projects: '30+',
     exeperiences: '4+',
     rating: 8, 
   },
   {
     technology: 'MySql',
-    projects: '50+',
+    projects: '20+',
     exeperiences: '4+',
     rating: 7, 
   },
   {
     technology: 'Laravel',
-    projects: '30+',
+    projects: '20+',
     exeperiences: '3+',
     rating: 8, 
   },
   {
     technology: 'React js',
-    projects: '30+',
+    projects: '20+',
     exeperiences: '3+',
     rating: 8, 
   },
@@ -61,8 +61,8 @@ var skills = [
   },
   {
     technology: 'WordPress',
-    projects: '10+',
-    exeperiences: '3+',
+    projects: '5+',
+    exeperiences: '2+',
     rating: 8, 
   },
   // {
