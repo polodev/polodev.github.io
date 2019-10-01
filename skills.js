@@ -53,15 +53,15 @@ var skills = [
     exeperiences: '2+',
     rating: 8, 
   },
+  // {
+  //   technology: 'React native',
+  //   projects: '5+',
+  //   exeperiences: '1+',
+  //   rating: 6, 
+  // },
   {
-    technology: 'React native',
-    projects: '5+',
-    exeperiences: '1+',
-    rating: 6, 
-  },
-  {
-    technology: 'WordPress',
-    projects: '5+',
+    technology: 'WordPress themes, plugin, elementor widget',
+    projects: '10+',
     exeperiences: '2+',
     rating: 8, 
   },
