@@ -60,7 +60,13 @@ var skills = [
   //   rating: 6, 
   // },
   {
-    technology: 'WordPress themes, plugin, elementor widget',
+    technology: 'WordPress themes, plugin development',
+    projects: '10+',
+    exeperiences: '2+',
+    rating: 8, 
+  },
+  {
+    technology: 'Elementor Addon Developer',
     projects: '10+',
     exeperiences: '2+',
     rating: 8, 
